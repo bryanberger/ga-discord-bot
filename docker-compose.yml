@@ -3,6 +3,6 @@ services:
   bot:
     build:
       context: .
-      args:
+      environment:
         - DISCORD_TOKEN=${DISCORD_TOKEN}
     restart: always
